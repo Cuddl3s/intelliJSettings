@@ -19,7 +19,7 @@
       <option name="ECMAScript6" value="true" />
     </context>
   </template>
-  <template name="handler" value="const $intentName$Handler = {&#10;    canHandle(handlerInput) {&#10;        return handlerInput.requestEnvelope.request.type === 'IntentRequest'&#10;        &amp;&amp; handlerInput.requestEnvelope.request.intent.name === '$intentName$';&#10;    },&#10;    handle(handlerInput) {&#10;    &#10;        const speechText = &quot;&quot;;&#10;        return handlerInput.responseBuilder&#10;      .speak(speechText)&#10;      .reprompt(speechText)&#10;      .withSimpleCard(SKILL_NAME, speechText)&#10;      .getResponse();&#10;    }&#10;}" description="Creates a new Alexa Handler" toReformat="false" toShortenFQNames="true">
+  <template name="hndl" value="const $intentName$Handler = {&#10;    canHandle(handlerInput) {&#10;        return handlerInput.requestEnvelope.request.type === 'IntentRequest'&#10;        &amp;&amp; handlerInput.requestEnvelope.request.intent.name === '$intentName$';&#10;    },&#10;    handle(handlerInput) {&#10;    &#10;        const speechText = &quot;&quot;;&#10;        return handlerInput.responseBuilder&#10;      .speak(speechText)&#10;      .reprompt(speechText)&#10;      .withSimpleCard(SKILL_NAME, speechText)&#10;      .getResponse();&#10;    }&#10;}" description="Creates a new Alexa Handler" toReformat="false" toShortenFQNames="true">
     <variable name="intentName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="ECMAScript6" value="true" />
