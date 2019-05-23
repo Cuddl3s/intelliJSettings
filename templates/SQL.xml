@@ -1,5 +1,5 @@
 <templateSet group="SQL">
-  <template name="ofi" value="Join (&#10;  Select c.POSTNUMBER, count(*) as sum_ofi&#10;  from filtered_positions p&#10;  join CUSTOMER c on c.id = p.CUSTOMER_ID&#10;  where p.type = 0&#10;  and event_date &gt;= to_date('$start_date$', 'DD.MM.YYYY')&#10;  and event_date &lt; to_date('$end_date$', 'DD.MM.YYYY')&#10;  group by c.postnumber&#10;) $select1$&#10;on c.POSTNUMBER = s1.POSTNUMBER&#10;left outer JOIN (&#10;  SELECT c.postnumber, count(*) as sum_sparset&#10;  from filtered_positions p&#10;  join Customer c on c.id = p.CUSTOMER_ID&#10;  where p.type = 1&#10;  and event_date &gt;= to_date('$start_date$', 'DD.MM.YYYY')&#10;  and event_date &lt; to_date('$end_date$', 'DD.MM.YYYY')&#10;  group by c.postnumber&#10;) $select2$" toReformat="false" toShortenFQNames="true">
+  <template name="ofi" value="Join (&#10;  Select c.POSTNUMBER, count(*) as sum_ofi&#10;  from filtered_positions p&#10;  join CUSTOMER c on c.id = p.CUSTOMER_ID&#10;  where p.type = 0&#10;  and event_date &gt;= to_date('$start_date$', 'DD.MM.YYYY')&#10;  and event_date &lt; to_date('$end_date$', 'DD.MM.YYYY')&#10;  group by c.postnumber&#10;) $select1$&#10;on c.POSTNUMBER = s1.POSTNUMBER&#10;left outer JOIN (&#10;  SELECT c.postnumber, count(*) as sum_sparset&#10;  from filtered_positions p&#10;  join Customer c on c.id = p.CUSTOMER_ID&#10;  where p.type = 1&#10;  and event_date &gt;= to_date('$start_date$', 'DD.MM.YYYY')&#10;  and event_date &lt; to_date('$end_date$', 'DD.MM.YYYY')&#10;  group by c.postnumber&#10;) $select2$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="start_date" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="end_date" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="select1" expression="" defaultValue="" alwaysStopAt="true" />
@@ -8,13 +8,13 @@
       <option name="SQL" value="true" />
     </context>
   </template>
-  <template name="header" value="'Anzahl OFI Käufe $monat$ 2018', 'Anzahl Sparset Käufe $monat$ 2018'," toReformat="false" toShortenFQNames="true">
+  <template name="header" value="'Anzahl OFI Käufe $monat$ 2018', 'Anzahl Sparset Käufe $monat$ 2018'," description="" toReformat="false" toShortenFQNames="true">
     <variable name="monat" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="SQL" value="true" />
     </context>
   </template>
-  <template name="sums" value="$s1$.sum_ofi, $s2$.sum_sparset," toReformat="false" toShortenFQNames="true">
+  <template name="sums" value="$s1$.sum_ofi, $s2$.sum_sparset," description="" toReformat="false" toShortenFQNames="true">
     <variable name="s1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="s2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
