@@ -6,7 +6,7 @@
           <IdeaActionID>Back</IdeaActionID>
           <ShortCut>'Alt+Umschalt+Links'</ShortCut>
           <Description>Back</Description>
-          <Count>6</Count>
+          <Count>11</Count>
         </Item>
       </Statistic>
       <Statistic Action="Declaration">
@@ -14,7 +14,7 @@
           <IdeaActionID>GotoDeclaration</IdeaActionID>
           <ShortCut>'Strg+B'</ShortCut>
           <Description>Declaration</Description>
-          <Count>6</Count>
+          <Count>15</Count>
         </Item>
       </Statistic>
       <Statistic Action="Find Usages">
@@ -22,7 +22,7 @@
           <IdeaActionID>FindUsages</IdeaActionID>
           <ShortCut>'Alt+Umschalt+7'</ShortCut>
           <Description>Find Usages</Description>
-          <Count>1</Count>
+          <Count>2</Count>
         </Item>
       </Statistic>
       <Statistic Action="Find in Path...">
@@ -30,6 +30,14 @@
           <IdeaActionID>FindInPath</IdeaActionID>
           <ShortCut>'Strg+Umschalt+F'</ShortCut>
           <Description>Find in Path...</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
+      <Statistic Action="Forward">
+        <Item>
+          <IdeaActionID>Forward</IdeaActionID>
+          <ShortCut>'Alt+Umschalt+Rechts'</ShortCut>
+          <Description>Forward</Description>
           <Count>1</Count>
         </Item>
       </Statistic>
