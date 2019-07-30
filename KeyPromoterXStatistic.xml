@@ -6,7 +6,7 @@
           <IdeaActionID>Back</IdeaActionID>
           <ShortCut>'Alt+Umschalt+Links'</ShortCut>
           <Description>Back</Description>
-          <Count>39</Count>
+          <Count>43</Count>
         </Item>
       </Statistic>
       <Statistic Action="Declaration">
@@ -14,7 +14,7 @@
           <IdeaActionID>GotoDeclaration</IdeaActionID>
           <ShortCut>'Strg+B'</ShortCut>
           <Description>Declaration</Description>
-          <Count>38</Count>
+          <Count>40</Count>
         </Item>
       </Statistic>
       <Statistic Action="Find Usages">
@@ -102,7 +102,7 @@
           <IdeaActionID>ActivateVersionControlToolWindow</IdeaActionID>
           <ShortCut>'Alt+9'</ShortCut>
           <Description>Version Control</Description>
-          <Count>1</Count>
+          <Count>4</Count>
         </Item>
       </Statistic>
     </option>
